@@ -1,0 +1,92 @@
+dimension	3
+units           real
+boundary        p p p
+atom_style      full
+
+newton off
+timestep 3.0
+
+#interaction definition
+pair_style      hybrid/overlay lj/cut/coul/long 10.0 buck 10.0 
+#pair_style buck/coul/long 10.0
+#pair_style exp612/cut/coul/long 10.0
+
+pair_modify tail yes
+
+kspace_style 	pppm/cg 1e-5
+kspace_modify   mesh 32 32 32 order 4 gewald 0.23
+bond_style  harmonic
+angle_style  harmonic
+dihedral_style multi/harmonic
+improper_style harmonic
+
+neigh_modify    every 1 delay 0 check yes
+
+read_data  data.lammps.config
+#read_restart ./restart/test.restart.100
+
+dihedral_coeff  1  0.775000  0.000000  -1.550000  0.000000  -0.000000  #   CmU    CN    N+   Ccn
+dihedral_coeff  2  10.000000  0.000000  -20.000000  0.000000  -0.000000  #   Ccn   Ccn    N+   Ccn
+dihedral_coeff  3  10.000000  0.000000  -20.000000  0.000000  -0.000000  #   Ccn    N+   Ccn    N+
+dihedral_coeff  4  10.000000  0.000000  -20.000000  0.000000  -0.000000  #    N+   Ccn   Ccn    N+
+dihedral_coeff  5  0.000000  -0.435014  0.000000  0.580019  -0.000000  #     F    Cm    S-    N-
+dihedral_coeff  6  -0.254995  -2.369503  0.509990  0.000000  -0.000000  #    Cm    S-    N-    S-
+
+include vdw_pairs.lammps    #vdw_exp612.lammps    #vdw_pairs.lammps   #vdw_buck_only.lammps #vdw_exp612.lammps
+
+
+compute 1 all pe/atom 
+compute 2 all ke/atom
+compute 3 all stress/atom  NULL
+compute 11 all reduce sum c_1
+compute 21 all reduce sum c_2
+compute 31 all reduce sum c_3[1]
+compute 32 all reduce sum c_3[2]
+compute 33 all reduce sum c_3[3]
+variable vstress equal (c_31+c_32+c_33)/3.0
+
+compute        p all reduce sum c_3[1] c_3[2] c_3[3]
+variable       ppress equal -(c_p[1]+c_p[2]+c_p[3])/(3*vol)
+variable       ppx equal -(c_p[1])/(vol)
+variable       ppy equal -(c_p[2])/(vol)
+variable       ppz equal -(c_p[3])/(vol)
+
+
+
+#compute CP all pressure NVE
+
+special_bonds lj/coul 0 0 0.5
+
+thermo_style custom step ke pe  temp etotal
+#thermo_style custom step temp  ke c_21 pe c_11  pxx pyy pzz press v_ppress
+#thermo_style custom step pxx v_ppx pyy v_ppy pzz v_ppz press v_ppress
+#thermo_style custom step evdwl etail press v_ppress
+thermo 1
+
+dump 1 all custom 100 dump-atoms.dump    id  c_1 c_2   mass fx fy fz vx vy vz 
+
+
+write_data written-data.0
+
+group EMIM type 1 2 3 4 5 6 
+group TFSI type 7 8 9 10 11 
+group ILs union EMIM TFSI
+
+fix bond_constrains all shake 0.0001 20 10000 b 1 2 6 7 8 10 12
+
+
+run_style respa 4 2 2 3 bond 1 angle 2 dihedral 2 pair 3 kspace 4   # that  works with buck
+ 
+velocity all create 393.0 13726
+run 0 # necesary to rescale
+##velocity all scale 393.0
+
+fix NVE all nve 
+
+#fix    NVT ILs nvt temp 393 393 500
+
+#restart 100 ./restart/test.restart
+run 3000
+
+write_data written-data.1
+

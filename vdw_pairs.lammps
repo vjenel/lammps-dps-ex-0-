@@ -1,0 +1,134 @@
+#----------------------------------------   as overlay lj/cut/long with buck --------------
+pair_coeff 1 1 lj/cut/coul/long 22314.085668 0.527399  # CmU CmU  EXP-6+12
+pair_coeff 2 2 lj/cut/coul/long 21.298073 1.220957  # CN CN  EXP-6+12
+pair_coeff 3 3 lj/cut/coul/long 49.997714 0.957878  # N+ N+  EXP-6+12
+pair_coeff 4 4 lj/cut/coul/long 162.219289 0.973693  # Ccn Ccn  EXP-6+12
+pair_coeff 5 5 lj/cut/coul/long 12.618716 1.630437  # CmN CmN  EXP-6+12
+pair_coeff 6 6 lj/cut/coul/long 8.007067 0.672776  # Hc Hc  EXP-6+12
+pair_coeff 7 7 lj/cut/coul/long 954.828117 0.726277  # Cm Cm  EXP-6+12
+pair_coeff 8 8 lj/cut/coul/long 122.663839 1.254847  # S- S-  EXP-6+12
+pair_coeff 9 9 lj/cut/coul/long 40.500024 1.232885  # N- N-  EXP-6+12
+pair_coeff 10 10 lj/cut/coul/long 32.321135 1.025898  # F F  EXP-6+12
+pair_coeff 11 11 lj/cut/coul/long 176.053095 0.835225  # O= O=  EXP-6+12
+pair_coeff 1 2 lj/cut/coul/long 395.837082 0.880191  # CN CmU  EXP-6+12
+pair_coeff 1 3 lj/cut/coul/long 985.388670 0.719037  # N+ CmU  EXP-6+12
+pair_coeff 2 3 lj/cut/coul/long 25.313601 1.128203  # N+ CN  EXP-6+12
+pair_coeff 1 4 lj/cut/coul/long 1341.587981 0.759570  # Ccn CmU  EXP-6+12
+pair_coeff 2 4 lj/cut/coul/long 57.087264 1.095658  # Ccn CN  EXP-6+12
+pair_coeff 3 4 lj/cut/coul/long 80.222846 0.984549  # Ccn N+  EXP-6+12
+pair_coeff 1 5 lj/cut/coul/long 93.064830 1.239435  # CmN CmU  EXP-6+12
+pair_coeff 2 5 lj/cut/coul/long 9.944848 1.533495  # CmN CN  EXP-6+12
+pair_coeff 3 5 lj/cut/coul/long 7.026119 1.545320  # CmN N+  EXP-6+12
+pair_coeff 4 5 lj/cut/coul/long 21.775696 1.423292  # CmN Ccn  EXP-6+12
+pair_coeff 1 6 lj/cut/coul/long 117.968247 0.736855  # Hc CmU  EXP-6+12
+pair_coeff 2 6 lj/cut/coul/long 0.866508 1.424430  # Hc CN  EXP-6+12
+pair_coeff 3 6 lj/cut/coul/long 3.500554 1.073420  # Hc N+  EXP-6+12
+pair_coeff 4 6 lj/cut/coul/long 3.322587 1.204199  # Hc Ccn  EXP-6+12
+pair_coeff 5 6 lj/cut/coul/long 0.156864 2.095113  # Hc CmN  EXP-6+12
+pair_coeff 1 7 lj/cut/coul/long 4481.854786 0.621947  # Cm CmU  EXP-6+12
+pair_coeff 2 7 lj/cut/coul/long 100.639686 0.997996  # Cm CN  EXP-6+12
+pair_coeff 3 7 lj/cut/coul/long 216.614996 0.835278  # Cm N+  EXP-6+12
+pair_coeff 4 7 lj/cut/coul/long 327.207117 0.867216  # Cm Ccn  EXP-6+12
+pair_coeff 5 7 lj/cut/coul/long 26.161661 1.381987  # Cm CmN  EXP-6+12
+pair_coeff 6 7 lj/cut/coul/long 18.083639 0.908982  # Cm Hc  EXP-6+12
+pair_coeff 1 8 lj/cut/coul/long 426.233521 1.019839  # S- CmU  EXP-6+12
+pair_coeff 2 8 lj/cut/coul/long 39.454823 1.292360  # S- CN  EXP-6+12
+pair_coeff 3 8 lj/cut/coul/long 31.189822 1.278166  # S- N+  EXP-6+12
+pair_coeff 4 8 lj/cut/coul/long 90.496629 1.190243  # S- Ccn  EXP-6+12
+pair_coeff 5 8 lj/cut/coul/long 37.547877 1.441543  # S- CmN  EXP-6+12
+pair_coeff 6 8 lj/cut/coul/long 0.751549 1.711014  # S- Hc  EXP-6+12
+pair_coeff 7 8 lj/cut/coul/long 117.605615 1.140675  # S- Cm  EXP-6+12
+pair_coeff 1 9 lj/cut/coul/long 418.035591 0.924695  # N- CmU  EXP-6+12
+pair_coeff 2 9 lj/cut/coul/long 28.336077 1.234254  # N- CN  EXP-6+12
+pair_coeff 3 9 lj/cut/coul/long 28.407117 1.173309  # N- N+  EXP-6+12
+pair_coeff 4 9 lj/cut/coul/long 71.339113 1.119217  # N- Ccn  EXP-6+12
+pair_coeff 5 9 lj/cut/coul/long 16.994990 1.486845  # N- CmN  EXP-6+12
+pair_coeff 6 9 lj/cut/coul/long 0.826194 1.522160  # N- Hc  EXP-6+12
+pair_coeff 7 9 lj/cut/coul/long 110.304579 1.041986  # N- Cm  EXP-6+12
+pair_coeff 8 9 lj/cut/coul/long 63.332128 1.266194  # N- S-  EXP-6+12
+pair_coeff 1 10 lj/cut/coul/long 747.114891 0.751443  # F CmU  EXP-6+12
+pair_coeff 2 10 lj/cut/coul/long 22.139577 1.151312  # F CN  EXP-6+12
+pair_coeff 3 10 lj/cut/coul/long 39.825387 0.992850  # F N+  EXP-6+12
+pair_coeff 4 10 lj/cut/coul/long 68.177771 1.009535  # F Ccn  EXP-6+12
+pair_coeff 5 10 lj/cut/coul/long 6.638930 1.556788  # F CmN  EXP-6+12
+pair_coeff 6 10 lj/cut/coul/long 2.357260 1.144193  # F Hc  EXP-6+12
+pair_coeff 7 10 lj/cut/coul/long 169.498726 0.868347  # F Cm  EXP-6+12
+pair_coeff 8 10 lj/cut/coul/long 29.024357 1.290933  # F S-  EXP-6+12
+pair_coeff 9 10 lj/cut/coul/long 25.530166 1.191927  # F N-  EXP-6+12
+pair_coeff 1 11 lj/cut/coul/long 1926.690427 0.666840  # O= CmU  EXP-6+12
+pair_coeff 2 11 lj/cut/coul/long 43.056026 1.070890  # O= CN  EXP-6+12
+pair_coeff 3 11 lj/cut/coul/long 92.954606 0.895835  # O= N+  EXP-6+12
+pair_coeff 4 11 lj/cut/coul/long 140.111419 0.930421  # O= Ccn  EXP-6+12
+pair_coeff 5 11 lj/cut/coul/long 11.167697 1.483479  # O= CmN  EXP-6+12
+pair_coeff 6 11 lj/cut/coul/long 7.811892 0.973802  # O= Hc  EXP-6+12
+pair_coeff 7 11 lj/cut/coul/long 409.995868 0.778850  # O= Cm  EXP-6+12
+pair_coeff 8 11 lj/cut/coul/long 50.223779 1.224359  # O= S-  EXP-6+12
+pair_coeff 9 11 lj/cut/coul/long 47.152693 1.118245  # O= N-  EXP-6+12
+pair_coeff 10 11 lj/cut/coul/long 72.689389 0.931400  # O= F  EXP-6+12
+pair_coeff 1 1 buck 1252941.600000 0.259376 0.000000  # CmU CmU  EXP-6+12
+pair_coeff 2 2 buck 3592.400000 0.336361 0.000000  # CN CN  EXP-6+12
+pair_coeff 3 3 buck 8137.700000 0.283334 0.000000  # N+ N+  EXP-6+12
+pair_coeff 4 4 buck 22752.700000 0.317692 0.000000  # Ccn Ccn  EXP-6+12
+pair_coeff 5 5 buck 1982.400000 0.429997 0.000000  # CmN CmN  EXP-6+12
+pair_coeff 6 6 buck 3255.100000 0.170832 0.000000  # Hc Hc  EXP-6+12
+pair_coeff 7 7 buck 108283.000000 0.274688 0.000000  # Cm Cm  EXP-6+12
+pair_coeff 8 8 buck 8621.900000 0.400000 0.000000  # S- S-  EXP-6+12
+pair_coeff 9 9 buck 7324.000000 0.358333 0.000000  # N- N-  EXP-6+12
+pair_coeff 10 10 buck 7117.900000 0.292620 0.000000  # F F  EXP-6+12
+pair_coeff 11 11 buck 15923.100000 0.274379 0.000000  # O= O=  EXP-6+12
+pair_coeff 1 2 buck 50837.729249 0.309347 0.000000  # CN CmU  EXP-6+12
+pair_coeff 1 3 buck 97529.887406 0.272664 0.000000  # N+ CmU  EXP-6+12
+pair_coeff 2 3 buck 4762.089295 0.315314 0.000000  # N+ CN  EXP-6+12
+pair_coeff 1 4 buck 141781.989742 0.295537 0.000000  # Ccn CmU  EXP-6+12
+pair_coeff 2 4 buck 8909.795309 0.327690 0.000000  # Ccn CN  EXP-6+12
+pair_coeff 3 4 buck 12842.606622 0.302927 0.000000  # Ccn N+  EXP-6+12
+pair_coeff 1 5 buck 20871.577936 0.386099 0.000000  # CmN CmU  EXP-6+12
+pair_coeff 2 5 buck 2078.491210 0.396483 0.000000  # CmN CN  EXP-6+12
+pair_coeff 3 5 buck 2124.285522 0.388139 0.000000  # CmN N+  EXP-6+12
+pair_coeff 4 5 buck 4659.279059 0.392827 0.000000  # CmN Ccn  EXP-6+12
+pair_coeff 1 6 buck 33737.818622 0.234120 0.000000  # Hc CmU  EXP-6+12
+pair_coeff 2 6 buck 880.861050 0.300514 0.000000  # Hc CN  EXP-6+12
+pair_coeff 3 6 buck 2152.759468 0.254404 0.000000  # Hc N+  EXP-6+12
+pair_coeff 4 6 buck 2613.020564 0.284161 0.000000  # Hc Ccn  EXP-6+12
+pair_coeff 5 6 buck 317.334382 0.383334 0.000000  # Hc CmN  EXP-6+12
+pair_coeff 1 7 buck 362951.312229 0.267578 0.000000  # Cm CmU  EXP-6+12
+pair_coeff 2 7 buck 16568.788001 0.312922 0.000000  # Cm CN  EXP-6+12
+pair_coeff 3 7 buck 29556.731032 0.279178 0.000000  # Cm N+  EXP-6+12
+pair_coeff 4 7 buck 45258.593937 0.299989 0.000000  # Cm Ccn  EXP-6+12
+pair_coeff 5 7 buck 7152.754940 0.387304 0.000000  # Cm CmN  EXP-6+12
+pair_coeff 6 7 buck 8537.988298 0.247024 0.000000  # Cm Hc  EXP-6+12
+pair_coeff 1 8 buck 52755.384668 0.360644 0.000000  # S- CmU  EXP-6+12
+pair_coeff 2 8 buck 4889.671299 0.374802 0.000000  # S- CN  EXP-6+12
+pair_coeff 3 8 buck 5286.181850 0.363495 0.000000  # S- N+  EXP-6+12
+pair_coeff 4 8 buck 11218.360749 0.369912 0.000000  # S- Ccn  EXP-6+12
+pair_coeff 5 8 buck 4038.842321 0.416344 0.000000  # S- CmN  EXP-6+12
+pair_coeff 6 8 buck 820.379671 0.356719 0.000000  # S- Hc  EXP-6+12
+pair_coeff 7 8 buck 17911.634640 0.362332 0.000000  # S- Cm  EXP-6+12
+pair_coeff 1 9 buck 63523.967748 0.326469 0.000000  # N- CmU  EXP-6+12
+pair_coeff 2 9 buck 5038.340058 0.348211 0.000000  # N- CN  EXP-6+12
+pair_coeff 3 9 buck 6133.907570 0.331086 0.000000  # N- N+  EXP-6+12
+pair_coeff 4 9 buck 12110.582902 0.341010 0.000000  # N- Ccn  EXP-6+12
+pair_coeff 5 9 buck 3303.791620 0.401978 0.000000  # N- CmN  EXP-6+12
+pair_coeff 6 9 buck 1045.839784 0.319860 0.000000  # N- Hc  EXP-6+12
+pair_coeff 7 9 buck 21091.426721 0.329221 0.000000  # N- Cm  EXP-6+12
+pair_coeff 8 9 buck 7532.597120 0.381984 0.000000  # N- S-  EXP-6+12
+pair_coeff 1 10 buck 88576.522682 0.278455 0.000000  # F CmU  EXP-6+12
+pair_coeff 2 10 buck 4645.112255 0.318200 0.000000  # F CN  EXP-6+12
+pair_coeff 3 10 buck 7575.260830 0.288164 0.000000  # F N+  EXP-6+12
+pair_coeff 4 10 buck 12348.566216 0.306432 0.000000  # F Ccn  EXP-6+12
+pair_coeff 5 10 buck 2153.749540 0.389177 0.000000  # F CmN  EXP-6+12
+pair_coeff 6 10 buck 1842.560770 0.262387 0.000000  # F Hc  EXP-6+12
+pair_coeff 7 10 buck 27270.076053 0.284359 0.000000  # F Cm  EXP-6+12
+pair_coeff 8 10 buck 5318.730064 0.364931 0.000000  # F S-  EXP-6+12
+pair_coeff 9 10 buck 6065.148698 0.333360 0.000000  # F N-  EXP-6+12
+pair_coeff 1 11 buck 139260.998676 0.267402 0.000000  # O= CmU  EXP-6+12
+pair_coeff 2 11 buck 6342.013063 0.312841 0.000000  # O= CN  EXP-6+12
+pair_coeff 3 11 buck 11330.567268 0.279036 0.000000  # O= N+  EXP-6+12
+pair_coeff 4 11 buck 17331.274760 0.299890 0.000000  # O= Ccn  EXP-6+12
+pair_coeff 5 11 buck 2734.806237 0.387277 0.000000  # O= CmN  EXP-6+12
+pair_coeff 6 11 buck 3283.936843 0.246761 0.000000  # O= Hc  EXP-6+12
+pair_coeff 7 11 buck 41523.263086 0.274533 0.000000  # O= Cm  EXP-6+12
+pair_coeff 8 11 buck 6849.832333 0.362294 0.000000  # O= S-  EXP-6+12
+pair_coeff 9 11 buck 8069.869168 0.329159 0.000000  # O= N-  EXP-6+12
+pair_coeff 10 11 buck 10450.635332 0.284229 0.000000  # O= F  EXP-6+12
+
